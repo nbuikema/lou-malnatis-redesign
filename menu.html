@@ -1,0 +1,742 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link href="./assets/imgs/favicon.ico" rel="icon" type="image/x-icon" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <title>Lou Malnati's - Authentic Chicago Style Deep Dish Pizza</title>
+	</head>
+	<body>
+        <div>
+            <nav class="navbar navbar-expand d-none d-md-block navbar-dark bg-dark mt-0 rounded-top rounded-bottom">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav nav-fill w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About Lou's</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact Lou's</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./catering.html">Catering</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./giftcards.html">Gift Cards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./feedback.html">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./confirmation.html">Order Confirmation</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        
+            <div class="jumbotron text-center px-0 py-0 bg-light rounded-top">
+                <img class="img-fluid w-25 my-4" src="./assets/imgs/logo.png" />
+            </div>
+
+            <nav id="navbar" class="navbar sticky-top navbar-expand-md navbar-light bg-light mt-0 rounded-bottom">
+                <a class="navbar-brand d-block d-md-none" href="./index.html">Lou Malnati's </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav nav-fill w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cart.html">My Cart <i class="fas fa-shopping-cart"></i> <sup>2</sup></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./checkout.html">Checkout</a>
+                        </li>
+                        <div class="d-block d-md-none">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./confirmation.html">Order Confirmation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">About Lou's</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact Lou's</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./catering.html">Catering</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./giftcards.html">Gift Cards</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./feedback.html">Feedback</a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div id="container" class="container">
+
+            <div class="jumbotron home rounded px-0">
+
+                <ul onclick="resetImageFades()" class="nav nav-pills nav-fill w-100 mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-appetizers-tab" data-toggle="pill" href="#pills-appetizers" role="tab" aria-controls="pills-appetizers" aria-selected="false">Appetizers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-salads-tab" data-toggle="pill" href="#pills-salads" role="tab" aria-controls="pills-salads" aria-selected="false">Salads</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-pizzas-tab" data-toggle="pill" href="#pills-pizzas" role="tab" aria-controls="pills-pizzas" aria-selected="true">Pizzas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-pastas-tab" data-toggle="pill" href="#pills-pastas" role="tab" aria-controls="pills-pastas" aria-selected="false">Pastas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-sandwiches-tab" data-toggle="pill" href="#pills-sandwiches" role="tab" aria-controls="pills-sandwiches" aria-selected="false">Sandwiches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-combos-tab" data-toggle="pill" href="#pills-combos" role="tab" aria-controls="pills-combos" aria-selected="false">Combos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-desserts-tab" data-toggle="pill" href="#pills-desserts" role="tab" aria-controls="pills-desserts" aria-selected="false">Desserts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-drinks-tab" data-toggle="pill" href="#pills-drinks" role="tab" aria-controls="pills-drinks" aria-selected="false">Drinks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-extras-tab" data-toggle="pill" href="#pills-extras" role="tab" aria-controls="pills-extras" aria-selected="false">Extras</a>
+                    </li>
+                </ul>
+
+                <hr />
+                <hr />
+
+                <div class="tab-content text-white" id="pills-tabContent">
+                    <div class="tab-pane fade" id="pills-appetizers" role="tabpanel" aria-labelledby="pills-appetizers-tab">
+                        <h2 class="mt-5">BREADS</h2>
+                        <hr />
+                        <div class="row mt-3">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/bruschetta.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">LOU'S BRUSCHETTA</h5>
+                                        <p class="card-text">Roma tomatoes, fresh basil, olive oil and shaved parmesan on garlic rounds.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/garlicbread.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">GARLIC BREAD</h5>
+                                        <p class="card-text">Served with marinara sauce.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/cheesebread.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">CHEESE BREAD</h5>
+                                        <p class="card-text">Giant French bread with three cheeses, a touch of garlic and dipping sauce.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="mt-4">WINGS</h2>
+                        <hr />
+                        <div class="row mt-3">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/wings.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">BONE-IN CHICKEN WINGS</h5>
+                                        <p class="card-text">Your choice of our homemade Buffalou or BBQ Bar-B-Lou sauce served with celery and gorgonzola or ranch dressing.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/bonelesswings.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">BONELESS CHICKEN WINGS</h5>
+                                        <p class="card-text">Pieces of all-white, boneless chicken breast lightly breaded and cooked to crisp perfection, tossed in your choice of our homemade BuffaLou sauce or honey BBQ Bar-B-Lou sauce.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-salads" role="tabpanel" aria-labelledby="pills-salads-tab">
+                        <h2 class="mt-5">SALADS</h2>
+                        <hr />
+                        <div class="row mt-3">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/malnatisalad.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">MALNATI SALAD</h5>
+                                        <p class="card-text">Romaine lettuce, tomatoes, black olives, mushrooms, Volpi salami bits and gorgonzola cheese with our Sweet Vinaigrette and romano cheese.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/housesalad.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">HOUSE SALAD</h5>
+                                        <p class="card-text">Iceberg and Romaine lettuce, red cabbage, tomatoes...</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/caesarsalad.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">CAESAR SALAD</h5>
+                                        <p class="card-text">Romaine lettuce, tomatoes and shaved parmesan with Caesar dressing and croutons.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade show active" id="pills-pizzas" role="tabpanel" aria-labelledby="pills-pizzas-tab">
+                        <h2 class="mt-5">DEEP DISH PIZZAS</h2>
+                        <hr />
+                        <div class="row mt-3">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/deepdishcreate.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">DEEP DISH CREATE YOUR OWN</h5>
+                                        <p class="card-text">Order your pizza just how you like it – topped with a mixture of your favorite ingredients, and cooked to your liking!</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/deepdishchicago.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">DEEP DISH MALNATI CHICAGO CLASSIC™</h5>
+                                        <p class="card-text">Made with Lou's lean sausage, some extra mozzarella cheese and vine-ripened tomato sauce on Buttercrust™. It's authentic Chicago!</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/deepdishlou.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">DEEP DISH THE LOU</h5>
+                                        <p class="card-text">A pizza so good we gave it his name! Spinach mix (enhanced with garlic, basil & onion), mushrooms and sliced Roma tomatoes covered with three cheeses, on a garlic Buttercrust™.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/deepdishcheese.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">DEEP DISH CHEESE</h5>
+                                        <p class="card-text">Mozzarella cheese topped with vine-ripened tomato sauce.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/deepdishsausage.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">DEEP DISH SAUSAGE</h5>
+                                        <p class="card-text">Lou's lean sausage, topped with mozzarella cheese and vine-ripened tomato sauce.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/deepdishpepperoni.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">DEEP DISH PEPPERONI</h5>
+                                        <p class="card-text">Mozzarella cheese, topped with slices of pepperoni and vine-ripened tomato sauce.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/deepdishspinach.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">DEEP DISH SPINACH</h5>
+                                        <p class="card-text">Spinach mix (enhanced with garlic, basil & onion), topped with mozzarella cheese and vine-ripened tomato sauce.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/deepdishveggie.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">DEEP DISH VEGGIE</h5>
+                                        <p class="card-text">Mozzarella cheese, topped with a mixture of mushroom, onion & green pepper and vine-ripened tomato sauce.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="mt-4">THIN CRUST PIZZAS</h2>
+                        <hr />
+                        <div class="row mt-3">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/thincreate.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">THIN CRUST CREATE YOUR OWN</h5>
+                                        <p class="card-text">Order your pizza just how you like it – topped with a mixture of your favorite ingredients, and cooked to your liking!</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/thinlou.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">THIN CRUST THE LOU</h5>
+                                        <p class="card-text">A pizza so good we gave it his name! Spinach mix (enhanced with garlic, basil & onion), mushrooms and sliced Roma tomatoes covered with three cheeses.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/thincheese.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">THIN CRUST CHEESE</h5>
+                                        <p class="card-text">Vine-ripened tomato sauce topped with mozzarella cheese.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/thinsausage.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">THIN CRUST SAUSAGE</h5>
+                                        <p class="card-text">Vine-ripened tomato sauce topped with Lou's lean sausage and mozzarella cheese.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/thinpepperoni.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">THIN CRUST PEPPERONI</h5>
+                                        <p class="card-text">Vine-ripened tomato sauce topped with pepperoni slices and mozzarella cheese.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/thinspinach.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">THIN CRUST SPINACH</h5>
+                                        <p class="card-text">Vine-ripened tomato sauce topped with spinach mix (enhanced with garlic, basil & onion) and mozzarella cheese.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/thinveggie.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">THIN CRUST VEGGIE</h5>
+                                        <p class="card-text">Vine-ripened tomato sauce topped with a mixture of mushroom, onion & green pepper, and mozzarella cheese.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-pastas" role="tabpanel" aria-labelledby="pills-pastas-tab">
+                        <h2 class="mt-5">PASTAS</h2>
+                        <hr />
+                        <div class="row mt-3">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/pennealamalnati.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">PENNE ALA MALNATI</h5>
+                                        <p class="card-text">Cream and Romano cheese folded into our meat sauce topped with baked mozzarella.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/lasagna.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">LASAGNA</h5>
+                                        <p class="card-text">Layers of spinach and three cheeses topped with our meat or marinara sauce.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/spaghetti.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">SPAGHETTI</h5>
+                                        <p class="card-text">With meat or marinara sauce.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/penne.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">PENNE</h5>
+                                        <p class="card-text">With meat or marinara sauce.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/spaghetti.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">FOUR CHEESE RAVIOLI</h5>
+                                        <p class="card-text">Served with your choice of meat or marinara sauce.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-sandwiches" role="tabpanel" aria-labelledby="pills-sandwiches-tab">
+                        <h2 class="mt-5">SANDWICHES</h2>
+                        <hr />
+                        <div class="row mt-3">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/beefsandwich.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">ITALIAN BEEF SANDWICH</h5>
+                                        <p class="card-text">Tender beef smothered with melted mozzarella.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/meatballsandwich.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">MEATBALL SANDWICH</h5>
+                                        <p class="card-text">Three meatballs topped with marinara and melted mozzarella.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-combos" role="tabpanel" aria-labelledby="pills-combos-tab">
+                        <h2 class="mt-5">COMBOS</h2>
+                        <hr />
+                        <div class="row mt-3">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/hattrick.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">HAT TRICK</h5>
+                                        <p class="card-text">Create-Your-Own Large Deep Dish pizza, Medium Malnati Salad, & Chicken Wings.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/perfectpairing.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">PERFECT PAIRING</h5>
+                                        <p class="card-text">Create-Your-Own Large Deep Dish pizza & Medium Malnati Salad.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/dynamicduo.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">DYNAMIC DUO</h5>
+                                        <p class="card-text">Create-Your-Own Large Deep Dish pizza & Chicken Wings.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/bestmealever.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">BEST. MEAL. EVER.</h5>
+                                        <p class="card-text">Large Deep Dish Chicago Classic pizza, Medium Malnati Salad, & Chicken Wings.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/winnerdinner.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">WINNER DINNER</h5>
+                                        <p class="card-text">Large Deep Dish Chicago Classic pizza & Medium Malnati Salad.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/gametime.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">GAME TIME DECISION</h5>
+                                        <p class="card-text">Large Deep Dish Chicago Classic pizza & Chicken Wings.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-desserts" role="tabpanel" aria-labelledby="pills-desserts-tab">
+                        <h2 class="mt-5">DESSERTS</h2>
+                        <hr />
+                        <div class="row mt-3">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/italianice.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">LOU'S ITALIAN ICE</h5>
+                                        <p class="card-text">Available in assorted in-season flavors.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/tiramisu.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">TIRAMISU</h5>
+                                        <p class="card-text">Ladyfinger cookies soaked in espresso, layered with mascarpone cheese and topped with cocoa powder.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-drinks" role="tabpanel" aria-labelledby="pills-drinks-tab">
+                        <h2 class="mt-5">BEVERAGES</h2>
+                        <hr />
+                        <div class="row mt-3">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/coke.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">COCA-COLA</h5>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/dietcoke.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">DIET COKE</h5>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/cokezero.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">COKE ZERO</h5>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/sprite.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">SPRITE</h5>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/barqs.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">BARQ'S ROOT BEER</h5>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/dasani.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">DASANI BOTTLED WATER</h5>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-extras" role="tabpanel" aria-labelledby="pills-extras-tab">
+                        <h2 class="mt-5">EXTRAS</h2>
+                        <hr />
+                        <div class="row mt-3">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/vinaigrette.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">BOTTLED MALNATI'S SWEET VINAIGRETTE</h5>
+                                        <p class="card-text">A 16-oz. bottle of Lou Malnati's Sweet Vinaigrette Salad Dressing. The perfect compliment to your favorite salads.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/noimage.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">EXTRA DRESSING</h5>
+                                        <p class="card-text">An extra serving of dressing for salads. Choose from all dressing types.</p>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/noimage.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">PARMESAN</h5>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/noimage.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">CRUSHED RED PEPPER FLAKES</h5>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/noimage.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">PLATES</h5>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/noimage.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">FORKS AND KNIVES</h5>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card text-dark h-100 fadeIn-image">
+                                    <img class="card-img-top" src="./assets/imgs/menu/noimage.jpg" alt="Card image cap">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">NAPKINS</h5>
+                                        <a href="#" class="btn btn-primary mt-auto">Add to Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="modal-button btn btn-primary fixed-bottom float-right" data-toggle="modal" data-target="#exampleModal">
+                <span><i class="far fa-comment-dots"></i>&nbsp;Live Chat</span>
+            </button>
+              
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5 class="modal-title d-inline-block" id="exampleModalLabel">Customer Support</h5>
+                                    <button type="button" class="close d-inline-block" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <p class="col-12 mb-0">How can we help?</p>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <p class="message received rounded px-3 py-2 float-left">Hello! Thank you for contacting Lou Malnati's. How can we help?</p>
+                            <p class="message sent rounded px-3 py-2 bg-primary float-right">Hey!</p>
+                            <p class="message sent rounded px-3 py-2 bg-primary float-right">I would like to find out more about your rewards program.</p>
+                            <p class="message received rounded px-3 py-2 float-left">Sure! What would you like to know about it?</p>
+                            <p class="message sent rounded px-3 py-2 bg-primary float-right">How does the rewards program work?</p>
+                            <div class="message received rounded px-3 py-3 float-left typing-indicator">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <textarea class="form-control chatbox" id="message" aria-describedby="message" rows="2" placeholder="Type your message..."></textarea>
+                            <button type="button" class="btn btn-primary btn-sm btn-block">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="./assets/js/scripts.js"></script>
+	</body>
+</html>

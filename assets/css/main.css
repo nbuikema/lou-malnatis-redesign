@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Noto+Sans+TC:400,900&display=swap');
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url('../imgs/pizza.jpg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky-content {
+    padding-top: 70px!important;
+}
+
+.jumbotron {
+    background-color: #CCCECE;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.pizza-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(50px);
+	}
+	50% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(50px);
+	}
+}
+
+.fadeIn-image {
+    visibility: hidden;
+}
+
+.fadeIn {
+    animation: fadeInAnimation 0.8s;
+    visibility: visible!important;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.scaleIn-image {
+    visibility: hidden;
+}
+
+.scaleIn {
+    animation: scaleInAnimation 1.2s;
+    visibility: visible!important;
+    opacity: 0;
+}
+
+@keyframes scaleInAnimation {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.container-grow {
+    display: grid;
+}
+  
+.image1,
+.image2 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.chicago-grow {
+    animation: grow 2s ease-in-out 1.2s infinite;
+    opacity: 0;
+}
+
+@keyframes grow {
+	0% {
+        opacity: 1;
+		transform: scale(1);
+	}
+	50% {
+        opacity: 1;
+		transform: scale(.9);
+	}
+	100% {
+        opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.jumbotron.home {
+    background-color: transparent;
+}
+
+.outer-border {
+    border: 10px solid #CCCECE;
+}
+
+.high-top {
+    margin-top: 30vh;
+}
+
+.inner-border {
+    border: 2px solid #CCCECE;
+}
+
+.home-section {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
+.home-section.top {
+    margin-top: 0;
+}
+
+.home-section.bottom {
+    margin-bottom: 0;
+}
+
+.bg-dark {
+    background-color: #C62829!important;
+}
+
+.bg-light .nav-link {
+    color: #C62829!important;
+    text-transform: uppercase;
+    font-family: 'Bad Script', cursive;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.bg-dark .nav-link {
+    color: #FFFFFF!important;
+}
+
+.navbar .active {
+    border-left: 4px solid #C62829;
+    border-right: 4px solid #C62829;
+    border-radius: 50%;
+}
+
+.nav-pills .nav-link {
+    color: #FFFFFF!important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #C62829;
+}
+
+.jumbotron {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.jumbotron h2 {
+    font-size: 2.4em;
+    font-weight: 900;
+}
+
+.jumbotron h3 {
+    font-size: 1.8em;
+    font-weight: 900;
+}
+
+hr {
+    border: 1px solid #CCCECE;
+    margin: 4px 0;
+}
+
+.jumbotron .nav {
+    font-size: 1.2em;
+}
+
+.row-reset {
+    margin: 15px 0;
+}
+
+.container {
+    max-width: none;
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 100vw!important;
+    }
+
+    .sticky-content {
+        padding-top: 56px!important;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 92vw!important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 80vw!important;
+    }
+}
+
+.modal-open {
+    overflow: auto;
+    padding-right: 0!important;
+}
+
+.modal-button {
+    padding-right: .75rem!important;
+    left: auto;
+}
+
+.modal-dialog {
+    position: fixed;
+    bottom: 11px;
+    right: 0;
+}
+
+.modal-backdrop {
+    display: none;
+}
+
+.modal.fade .modal-dialog {
+    transform: translate3d(0, 0, 0);
+}
+
+.modal-content {
+    height: 500px;
+    width: 350px;
+}
+
+.chatbox {
+    resize: none;
+}
+
+.message {
+    width: 85%;
+}
+
+.message.received {
+    background-color: rgb(226, 226, 226);
+}
+
+.message.sent {
+    color: white;
+}
+
+.modal-body {
+    overflow-y: scroll;
+}
+
+.typing-indicator span {
+    height: 15px;
+    width: 15px;
+    float: left;
+    margin: 0 1px;
+    background-color: #9E9EA1;
+    display: block;
+    border-radius: 50%;
+    opacity: 0.4;
+}
+
+.typing-indicator span:nth-child(1) {
+    animation: 1s blink infinite .3333s;
+}
+
+.typing-indicator span:nth-child(2) {
+    animation: 1s blink infinite .6666s;
+}
+
+.typing-indicator span:nth-child(3) {
+    animation: 1s blink infinite .9999s;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 1;
+    }
+}
+
+.spacing {
+    height: 400px;
+}
+
+#order-status {
+    display: none;
+}

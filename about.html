@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link href="./assets/imgs/favicon.ico" rel="icon" type="image/x-icon" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <title>Lou Malnati's - Authentic Chicago Style Deep Dish Pizza</title>
+	</head>
+	<body>
+        <div>
+            <nav class="navbar navbar-expand d-none d-md-block navbar-dark bg-dark mt-0 rounded-top rounded-bottom">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav nav-fill w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About Lou's</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact Lou's</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./catering.html">Catering</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./giftcards.html">Gift Cards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./feedback.html">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./confirmation.html">Order Confirmation</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        
+            <div class="jumbotron text-center px-0 py-0 bg-light rounded-top">
+                <img class="img-fluid w-25 my-4" src="./assets/imgs/logo.png" />
+            </div>
+
+            <nav id="navbar" class="navbar sticky-top navbar-expand-md navbar-light bg-light mt-0 rounded-bottom">
+                <a class="navbar-brand d-block d-md-none" href="./index.html">Lou Malnati's </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav nav-fill w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cart.html">My Cart <i class="fas fa-shopping-cart"></i> <sup>2</sup></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./checkout.html">Checkout</a>
+                        </li>
+                        <div class="d-block d-md-none">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./confirmation.html">Order Confirmation</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="./about.html">About Lou's</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact Lou's</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./catering.html">Catering</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./giftcards.html">Gift Cards</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./feedback.html">Feedback</a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div id="container" class="container">
+
+            <div class="jumbotron home rounded px-0">
+                    <div class="row row-reset">
+                        <div class="nav flex-column nav-pills col-12 col-md-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-lous-tab" data-toggle="pill" href="#v-pills-lous" role="tab" aria-controls="v-pills-lous" aria-selected="true">About Lou's</a>
+                            <a class="nav-link" id="v-pills-pizza-tab" data-toggle="pill" href="#v-pills-pizza" role="tab" aria-controls="v-pills-pizza" aria-selected="false">About the Pizza</a>
+                            <a class="nav-link" id="v-pills-history-tab" data-toggle="pill" href="#v-pills-history" role="tab" aria-controls="v-pills-history" aria-selected="false">The History of Lou's</a>
+                            <a class="nav-link" id="v-pills-find-tab" data-toggle="pill" href="#v-pills-find" role="tab" aria-controls="v-pills-find" aria-selected="false">Where to Find the Best Pizza in Chicago</a>
+                            <a class="nav-link" id="v-pills-rewards-tab" data-toggle="pill" href="#v-pills-rewards" role="tab" aria-controls="v-pills-rewards" aria-selected="false">Lou Malnati's Rewards</a>
+                            <a class="nav-link" id="v-pills-reheating-tab" data-toggle="pill" href="#v-pills-reheating" role="tab" aria-controls="v-pills-reheating" aria-selected="false">Baking and Reheating</a>
+                        </div>
+                        
+                        <hr class="d-block d-md-none w-100 my-4" />
+
+                        <div class="tab-content col-12 col-md-9" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active text-light" id="v-pills-lous" role="tabpanel" aria-labelledby="v-pills-lous-tab">
+                                <h2 class="mb-4">About Lou Malnati's Pizzeria</h2>
+                                <h4 class="mb-4">Considered the oldest family name in Chicago pizza, Lou Malnati's is as rich in history as its pizza is in flavor.</h4>
+                                <p class="mb-5">Lou Malnati got his start in the 1940's working in Chicago's first deep dish pizzeria. He took his pizza expertise to Lincolnwood, a northern suburb of Chicago, where he and his wife Jean opened the first Lou Malnati's Pizzeria on March 17, 1971. Lou was known for his fun-loving character as well as making Chicago's best pizza. Loyal patrons lined the streets on opening day for a taste of his delicious deep dish creations. Lou always thought it was funny that an Italian should open a pizzeria in a Jewish neighborhood on an Irish holiday. But that was Lou's style; he loved all types of people and didn't care much about what people thought.</p>
+                                <h3 class="mb-4">IF YOU BUILD IT, THEY WILL COME.</h3>
+                                <p class="mb-5">After meeting with an enormous success in Lincolnwood, Lou decided to open another pizzeria in a little northwestern suburb by O'Hare Airport, Elk Grove Village. Unfortunately, the Elk Grove location had a tough beginning. A major road construction project began a few months after the restaurant's opening and for 14 months business suffered immensely. At one point the accountants advised Lou to close the doors before it ruined him. But Lou would have nothing to do with that idea and persevered. Sure enough, once the construction ended, people came in droves to Lou Malnati's Pizzeria in Elk Grove.</p>
+                                <h3 class="mb-4">KEEPING IT IN THE FAMILY.</h3>
+                                <p class="mb-5">In 1978, Lou Malnati met with an untimely death when he fell victim to cancer. Lou's oldest son, Marc, was just graduating from college and joined his mother in the family business. A few years later, Marc's younger brother, Rick, finished his basketball career at downstate Illinois' Bradley University and he joined the family business as well.</p>
+                                <h3 class="mb-4">WHAT MAKES LOU MALNATI’S SPECIAL?</h3>
+                                <p class="mb-5">Malnati’s success comes from our commitment to quality. Every Lou Malnati’s pizza is handmade from scratch using the finest and freshest ingredients. Every year, the Malnati team hand selects California vine-ripened tomatoes for the perfect sweet and tangy taste. The exclusive sausage blend is seasoned to our exact specifications. The fresh mozzarella cheese comes from the same small dairy that has supplied Lou Malnati’s for over 40 years. And our family’s secret recipe for flaky, buttery crust has been passed down from generation to generation. You’ll know with every bite that each pizza was made with care and special attention.</p>
+                                <h3 class="mb-4">OUR PEOPLE ARE JUST AS IMPORTANT.</h3>
+                                <p>The other key ingredient to Lou Malnati’s is our dedicated staff and loyal customers. Over 15% of Lou Malnati's employees have been with the company for ten years or more, which is a testament to the fact that we attract and nurture loyalty. Want to join our team? Take a look at our open jobs.</p>
+                            </div>
+
+                            <div class="tab-pane fade text-light" id="v-pills-pizza" role="tabpanel" aria-labelledby="v-pills-pizza-tab">
+                                <h2 class="mb-4">The Best Pizza in Chicago</h2>
+                                <h4 class="mb-4">Our recipe for the best... flaky, buttery pizza crust, an exclusive sausage blend, vine ripened plum tomatoes from California, and Wisconsin cheese. Hungry yet?</h4>
+                                <p class="mb-5">Chicago-style deep dish pizza is the heartiest of the pizza varieties and typically eaten with a knife and fork. The dough is patted out by hand and raised up high on the sides of a seasoned deep dish pizza pan. True Chicago-style pizza actually has a rather thin crust that compliments the delicious toppings.</p>
+                                <h3 class="mb-4">THE ORDER THE INGREDIENTS ARE PLACED ON A CHICAGO STYLE-PIZZA IS “BACKWARDS” FROM A THIN CRUST PIZZA.</h3>
+                                <ol class="mb-4">
+                                    <li>Chicago style-pizza is made with slices of mozzarella cheese that are placed directly on the dough.</li>
+                                    <li>Then additional ingredients like mushrooms, onions and sausage are spread on top of the cheese.</li>
+                                    <li>The pizza is then topped with a fresh tomato sauce made with whole chunks of pear and plum tomatoes and topped off with a sprinkling of cheese and spices.</li>
+                                </ol>
+                                <h3 class="mb-4">SO, WHAT'S SO SPECIAL ABOUT LOU MALNATI'S DEEP-DISH PIZZA?</h3>
+                                <p class="mb-5">Lou Malnati's Pizzerias have stayed true to the original Chicago-style deep dish pizza recipe that Grandpa Malnati helped create in 1943 at Chicago's first deep dish pizzeria. We use only the freshest and finest ingredients available and our commitment to quality and consistency is what sets up apart.  Our secret recipes for the flaky, buttery crust and exclusive sausage blend are unmatched in flavor and taste. The tomato sauce is so crucial to the making of a great Lou Malnati's pizza that each year a team from Malnati’s goes to California and meets personally with the tomato growers. The finest vine ripened plum tomatoes are then blended and canned exclusively for Lou Malnati's use. Our cheese has continued to come from the same small dairy in Wisconsin for over 40 years.</p>
+                                <h3 class="mb-4">INGREDIENTS THAT MAKE YOU SALIVATE.</h3>
+                                <h4 class="mb-3"><strong>Tomato</strong> - crucial to the Lou Malnati's pizza recipe.</h4>
+                                <p class="mb-5">Each year a team from Malnati’s goes to California and meets personally with the tomato growers. The finest vine ripened plum tomatoes are then blended and canned exclusively for Lou Malnati's use. The trip is well worth the effort when the result is continuing our tradition as the best deep dish pizzeria in Chicago!</p>
+                                <h4 class="mb-3"><strong>Cheese</strong> - quality & flavor is essential.</h4>
+                                <p class="mb-5">We strive to maintain long term relationships with our vendors, which is why we have used the same Wisconsin dairy farm for over 40 years as our source for mozzarella cheese. The unique flavor and texture of their cheese is vital to the Lou Malnati's pizza recipe.</p>
+                                <h4 class="mb-3"><strong>Dough</strong> - flaky, buttery, delicious.</h4>
+                                <p>Our dough is patted out by hand and raised up high on the sides of a seasoned deep dish pizza pan. True Chicago-style pizza crust is actually rather thin but sturdy enough to hold the delicious toppings. The secret recipe for the flakey, buttery crust has been passed down for generations and is unmatched in flavor and taste.</p>
+                            </div>
+
+                            <div class="tab-pane fade text-light" id="v-pills-history" role="tabpanel" aria-labelledby="v-pills-history-tab">
+                                <h2 class="mb-4">The History of Lou's</h2>
+                                <h4 class="mb-4">Decade by decade, slice by slice, take an in-depth look at the history of Lou Malnati’s Pizzeria, serving Chicago's best deep dish pizza since 1971.</h4>
+                                <h3 class="mb-4">1970s</h3>
+                                <p>On March 17th, 1971, Lou Malnati and his wife Jean opened the first Lou Malnati’s Pizzeria in Lincolnwood, IL. Lou always thought it was funny that an Italian should open a pizzeria in a Jewish neighborhood on an Irish holiday, but that was just Lou’s style. He wanted his restaurant to be a model of hospitality, a place dedicated to family.</p>
+                                <p>Opening day 1971 was a day to remember, not only because hungry customers were getting their first taste of Lou’s soon to be legendary deep dish pizza, but because a car crashed through the walls of the main dining room during the dinner hour. Looking back on it, Jean says this incident made for an “exciting” opening day, but like with all things, the Malnatis bounced back.</p>
+                                <p>After meeting with enormous success in Lincolnwood, Lou decided it was time to expand the business, and he opened another pizzeria in Elk Grove Village, close to Chicago’s O’Hare Airport. Unfortunately, a road construction project began just a few months after the opening, and the next 14 months nearly put Lou Malnati’s Pizzeria out of business. Lou refused to give up, and as soon as construction finished, the customers came back in droves.</p>
+                                <p>The Malnatis were not so fortunate when they opened their third pizzeria in south suburban Flossmoor in 1977, just a year before Lou died. The logistical nightmare of opening a location over 50 miles from where Lou had created his "hub" in the north suburbs almost bankrupted the family. Just 16 months after opening, they were forced to close this pizzeria, and were left owing hundreds of thousands of dollars.</p>
+                                <p>Somehow, Lou's indomitable spirit lived on, as his son, Marc, graduated from college and joined Jean. In the Malnati tradition, they steadied the ship and paid back their vendors over the next few years.</p>
+                                <p>From the very start, the Malnati family has been passionate about giving back to the community that supports them.</p>
+                                <p>Starting in 1971, Lou and Jean hosted their first annual charity event to raise a scholarship fund for a local athlete that would play football at Wake Forest University, in the name of famous Chicago Bear Brian Piccolo, who passed away from cancer.</p>
+                                <p>After Lou also fell victim to cancer in 1978, Jean transformed this dinner into the Lou Malnati’s Cancer Research Benefit. To date, the Lou Malnati’s Cancer Research Fund has raised over $3 million to benefit organizations who are dedicated to finding a cure for cancer.</p>
+                                <p class="mb-4">Locations opened: Lincolnwood (March 17th, 1971), Elk Grove Village (November 16th, 1971), Flossmoor (January 3rd, 1977)</p>
+                                <h3 class="mb-4">1980s</h3>
+                                <p>Marc's brother, Rick, joined the team in 1981, and the brothers assumed leadership of the enterprise.</p>
+                                <p>With two successful locations going strong in Lincolnwood and Elk Grove Village, they decided it was time to open a third location in Wilmette, IL in 1981. This pizzeria in Wilmette was unique because rather than having a full dining room, it only offered carryout and delivery. This model of carryout and delivery proved to be incredibly successful, and vital to the future success of Lou Malnati’s. Presently, the majority of Lou Malnati’s Pizzerias are carryout and delivery only locations.</p>
+                                <p>The Malnatis doubled down on quality, and began to make investments in creating a product that could truly stand the test of time.</p>
+                                <p>They created loyal, long-term relationships with suppliers that also beleived in the pursuit of excellence. They routinely visited the dairy where their cheese was prepared, and traveled to California each year at harvest time to choose their tomato crop.</p>
+                                <p>1980 marked the first Taste of Chicago, and it was a great opportunity for people from all over Chicagoland and tourists alike to try our deep dish pizza.</p>
+                                <p>To this day, you can always find our legendary deep dish pizza cooked fresh on site at the Taste of Chicago, and other summer festivals like Lollapalooza.</p>
+                                <p>With a growing demand for our pizza, in 1989, we opened our first north suburban pizzeria in Buffalo Grove. Unlike previous restaurant openings, this one created incredible buzz across the entire area. People lined up for hours to get into this new Lou Malnati's Pizzeria, that seated over 250 people!</p>
+                                <p class="mb-4">Locations opened: Wilmette (June 22nd, 1981), Northbrook (February 1st, 1982), Schaumburg (October 22nd, 1985), Chicago – River North (May 5th, 1986), Buffalo Grove (March 1st, 1989)</p>
+                                <h3 class="mb-4">1990s</h3>
+                                <p>By this time, our deep dish pizza had made quite a national name for itself. Ex-Chicagoans all over the country were missing their favorite hometown pizza, and so, "Lou Malnati's Priority Pizza" was born. We began shipping our pizzas coast to coast to satisfy their cravings, and the trend really caught on!</p>
+                                <p>Meanwhile, our local pizzerias were still experiencing tremendous growth. We opened 10 locations in a 10 year period, including a Lou Malnati’s Pizzeria in Chicago’s North Lawndale neighborhood. Lou Malnati’s Lawndale opened with the goal of helping to rejuvenate the neighborhood. We promised to give any profits from the store back to the community to benefit children’s educational and recreational programs, and although it took a while, in 2011, this restaurant turned its first profit. As promised, the money was donated back into the community.</p>
+                                <p>We are proud of this continuing partnership with the Lawndale community.</p>
+                                <p class="mb-4">Locations opened: Mount Prospect (September 15th, 1992), Naperville – Downtown (February 14th, 1994), Highland Park (April 12th, 1995), Chicago – Lawndale (November 8th, 1995), Park Ridge (April 15th, 1996), Libertyville (October 1st, 1996), Elmhurst (June 2nd, 1997), Palatine (May 4th, 1998), Chicago – Lincoln Park (November 24th, 1998), Carol Stream (March 5th, 1999)</p>
+                                <h3 class="mb-4">2000s</h3>
+                                <p>With the new millennium came new opportunities for growth. Expanding within the Chicago city limits became a major goal, and while we continued to open new locations all over the suburbs, we added new Chicago locations to expand our delivery zones.</p>
+                                <p>Meanwhile... our Lou Malnati's Priority Pizza mail-order venture was picking up more and more steam! In 2000, we decided to partner with other iconic Chicago brands like Lettuce Entertain You, Portillo’s, and Eli's Cheesecake Company, to create Tastes of Chicago, a website and shipping service where the best foods Chicago has to offer can be found in one place.</p>
+                                <p>In 2009, our Tastes of Chicago division donated thousands of pizzas to the “Pizzas4Patriots” initiative to give U.S. troops overseas a taste of home.</p>
+                                <p>The economic recession dealt a major blow to businesses all over the country, and although we felt the burn, we also saw this as a great opportunity to strike favorable real estate deals and open more pizzerias, greatly expanding our reach across Chicagoland. Between 2000-2010, we opened 13 locations, and then 15 more stores between 2011-2016.</p>
+                                <p class="mb-4">Locations opened: Schaumburg – Barrington Road (January 22nd, 2001), Naperville – South 95th (February 14th, 2001), Bloomingdale (November 14th, 2001), Evanston (May 8th, 2003), Grayslake/Gurnee (January 13th, 2005), Western Springs (June 27th, 2005), Geneva (October 24th, 2005), Lake Zurich (April 6th, 2007), Lakewood (August 29th, 2007), Chicago – Bucktown/Wicker Park (August 16th, 2007), Lake Forest (March 5th, 2008), Chicago – South Loop (2008) Tinley Park (March 26th, 2009), Bolingbrook (September 30th, 2010), Chicago – Gold Coast (July 4th, 2011), Downers Grove (February 28th, 2011), Joliet/Shorewood (April 12th, 2012), Oak Lawn (November 8th, 2012), Elgin (June 20th, 2013), Oak Park (February 10th, 2014), Palos Heights (September 25th, 2014), Chicago – West Loop (October 20th, 2014), Chicago – Lincoln Square/North Center (May 4th, 2015), Oswego (February 17th, 2015), Harwood Heights (June 6th, 2015), Buzz Bait Taqueria (August 21st, 2015), Cary (November 4th, 2015), New Lenox (February 15th, 2016), Chicago – Old Irving/Six Corners (March 17th, 2016), Phoenix (2016)</p>
+                                <h3 class="mb-4">PRESENT DAY</h3>
+                                <p>We have continued to invest radically in building a relationally sound culture from the inside-out at Malnati's. Staff members have a strong tendency to stay once they become a part of our team. Nearly 25% of our full-timers have been with us for more than ten years, a statistic that is unheard of in the restaurant business.</p>
+                                <p>Over our 45 year history, we’ve kept Lou and Jean’s spirit of generosity alive through events like our annual Cancer Research Benefit, and our Thanksgiving food basket drive.</p>
+                                <p>Our current goal is to give away $1 million in support of our community each year.</p>
+                                <p>What’s next on the horizon for Lou Malnati’s? We’ve headed out of state! Our first out-of-state pizzeria opened in the heart of Phoenix in May 2016. We also opened a carryout location in Phoenix's Arcadia neighborhood in September 2017, and another full-service restaurant in Scottsdale in 2018.</p>
+                                <p>In July 2019, we opened Lou Malnati's Schererville, our first pizzeria in Indiana. And also in December 2019, we headed to America's Dairyland with our first Wisconsin pizzeria in Fox Point.</p>
+                                <p class="mb-4">As for our Chicagoland locations, in 2019, we opened a full-service restaurant on Michigan Avenue in the Wrigley Building.</p>
+                                <h5 class="mb-3">So, if you’re wondering where we’re going next...</h5>
+                                <h4>YOU’LL JUST HAVE TO STAY TUNED!</h4>
+                            </div>
+
+                            <div class="tab-pane fade text-light" id="v-pills-find" role="tabpanel" aria-labelledby="v-pills-find-tab">
+                                <h2 class="mb-4">Where to Find the Best Pizza in Chicago</h2>
+                                <p class="mb-4">If you're planning a trip to the Windy City, you're undoubtedly thinking, "Where can I find the best pizza in Chicago?!" Fear not, because Lou Malnati's has you covered from North Side, to the South Loop, to everywhere in between! There's no shortage of pizza places in Chicago, but we're going to make this real easy for you so you can skip the research.</p>
+                                <h4 class="mb-4">Lou Malnati's has been a premier destination for Chicago deep dish since 1971.</h4>
+                                <p class="mb-4">Using the same deep dish pizza recipe perfected by Lou Malnati over 40 years ago, we're continuing to make Chicago's best pizza using only the finest ingredients. When it comes to our deep dish pizza, we settle for nothing short of perfection. We've sourced our mozzarella cheese from the same small Wisconsin dairy for over 40 years, our California-grown, vine-ripened tomatoes are selected by our team every year at the peak of ripeness, and our dough, well, let's just say our secret recipe for flaky, buttery pizza crust can't be beat!</p>
+                                <h4 class="mb-4"><em>Hungry yet?</em></h4>
+                                <p class="mb-4">Check out our guide to pizza in Chicago by neighborhood and attraction. With Lou Malnati's locations all over the city, there's sure to be a location near you that fits your itinerary.</p>
+                                <h3 class="mb-4">NORTH SIDE</h3>
+                                <p class="mb-4">If you're on Chicago's North Side, you'll find yourself close to these popular spots:</p>
+                                <ul class="mb-4">
+                                    <li>Wrigley Field, home of the Chicago Cubs</li>
+                                    <li>Lincoln Park Zoo</li>
+                                    <li>Montrose Beach</li>
+                                    <li>Chicago's North Side has a vibrant music scene, with venues like the Riviera Theater, Davis Theater, Aragon Ballroom, Apollo Theater, The Vic, Park West, and more!</li>
+                                </ul>
+                                <p class="mb-5">Nearby Lou Malnati's locations: Lincoln Square/North Center (full-service restaurant & bar), Lincoln Park (café, limited seating), Old Irving/Six Corners (carryout & delivery only), Bucktown/Wicker Park (carryout & delivery only)</p>
+                                <h3 class="mb-4">DOWNTOWN</h3>
+                                <p class="mb-4">Many of Chicago's most iconic and talked about destinations are located in the heart of downtown. These places include:</p>
+                                <ul class="mb-4">
+                                    <li>The Magnificent Mile</li>
+                                    <li>Water Tower Place</li>
+                                    <li>Millenium Park</li>
+                                    <li>Navy Pier</li>
+                                    <li>The Chicago Theater</li>
+                                    <li>North Avenue Beach</li>
+                                </ul>
+                                <p class="mb-5">Nearby Lou Malnati's locations: River North (full-service restaurant & bar), Gold Coast (full-service restaurant & bar, private event space)</p>
+                                <h3 class="mb-4">SOUTH LOOP</h3>
+                                <p class="mb-4">Known as the "South Loop", the southern part of Chicago's downtown has a list of attractions all its own.</p>
+                                <ul class="mb-4">
+                                    <li>Grant Park (this is where events like the Taste of Chicago and Lollapalooza are held)</li>
+                                    <li>The Art Institute of Chicago</li>
+                                    <li>Museum Campus, including the Shedd Aquarium, Adler Planetarium, and Field Museum</li>
+                                    <li>Soldier Field, home of the Chicago Bears</li>
+                                    <li>The Willis Tower (also knows as the Sears Tower...) and Skydeck</li>
+                                    <li>McCormick Place</li>
+                                </ul>
+                                <p class="mb-5">Nearby Lou Malnati's location: South Loop (full-service restaurant)</p>
+                                <h3 class="mb-4">WEST LOOP</h3>
+                                <p class="mb-4">Chicago's west loop area used to house factories and warehouses, but now it has transformed into a bustling neighborhood with some of Chicago's best restaurants. Notable Chicago spots in the west loop include:</p>
+                                <ul class="mb-4">
+                                    <li>The United Center, home of the Chicago Bulls and the Chicago Blackhawks</li>
+                                    <li>Greektown</li>
+                                    <li>Little Italy</li>
+                                </ul>
+                                <p class="mb-4">Nearby Lou Malnati's locations: West Loop (full-service restaurant & bar), Lawndale (full-service restaurant)</p>
+                                <p class="mb-4">There you have it! Your complete guide to Lou Malnati's pizza places in Chicago. </p>
+                                <h4>Ready for your first slice?</h4>
+                            </div>
+
+                            <div class="tab-pane fade text-light" id="v-pills-rewards" role="tabpanel" aria-labelledby="v-pills-rewards-tab">
+                                <h2 class="mb-4">Lou Malnati's Rewards</h2>
+                                <p class="mb-4">Do you love Lou Malnati’s? Do you like getting free food as a reward for ordering? If your answer to either of these questions is “YES!” then sign up for Lou Malnati's Rewards and start getting rewarded for enjoying your favorite foods from Lou's!</p>
+                                <h3 class="mb-4">HOW IT WORKS.</h3>
+                                <p class="mb-4">Lou Malnati's Rewards members earn 1 point per $1 spent on dine in, delivery, and carryout orders, based on the subtotal of your order. Redeem points for one free menu item per order like a salad, appetizer, dessert, or pizza!</p>
+                                <p class="mb-4">The best part? Redeem your rewards when it’s convenient for you, any day of the week with no minimum order.</p>
+                                <h3 class="mb-4">HOW TO SIGN UP.</h3>
+                                <p class="mb-4">Become a Lou Malnati's Rewards member by:</p>
+                                <ul class="mb-4">
+                                    <li>Downloading the free Lou Malnati's app (available for Apple and Android devices)</li>
+                                    <li>Creating an account at order.loumalnatis.com</li>
+                                </ul>
+                                <h4>Start earning the rewards you deserve today!</h4>
+                            </div>
+
+                            <div class="tab-pane fade text-light" id="v-pills-reheating" role="tabpanel" aria-labelledby="v-pills-reheating-tab">
+                                <h2 class="mb-4">Baking & Reheating Instructions</h2>
+                                <p class="mb-4">You weren’t quite ready to dig in, but now you want to cook the frozen pizza or par-baked you have been dreaming of in your oven at home.  See below for baking instructions on how to prepare your pizza at home and how to reheat those leftovers you’ve been thinking about all day.</p>
+                                <h3 class="mb-4">HOW TO COOK A PAR-BAKED LOU MALNATI’S DEEP DISH PIZZA IN THE OVEN.</h3>
+                                <p class="mb-4">Since pizza types and ovens may vary, we recommend preheating the oven to 400-425° F.  For best results, place pizza on a cookie sheet and continue cooking in the oven until cheese is melted and crust is golden brown; approximately 15 minutes.  Continue to check every 5 minutes until the pizza is cooked to your specifications.  Increase baking time as needed if pizza has been refrigerated or frozen.  Cooking times vary depending on the amount of ingredients and your personal crust preference - please watch your pizza carefully!</p>
+                                <h3 class="mb-4">HOW TO COOK A LOU MALNATI’S FROZEN DEEP DISH PIZZA IN THE OVEN.</h3>
+                                <p class="mb-4">Preheat oven to 425° F.  Remove lid and lift pizza out of the pan. Wipe away condensation from the pan and lightly oil the pan. Return pizza to the pan and bake on the middle rack until cheese melts and crust becomes crispy and golden brown. (25-30 minutes for cheese pizza, 30-35 minutes for vegetarian, and 35-40 minutes for sausage, pepperoni or spinach). Baking times may vary.  If the pizza has already thawed, decrease the baking time by 5 minutes. Microwave cooking is not recommended.</p>
+                                <h3 class="mb-4">HOW TO REHEAT A LOU MALNATI’S DEEP DISH PIZZA IN THE OVEN.</h3>
+                                <p>Pre-heat oven to 350° F.  Remove from box and place pizza on a cookie sheet.  Continue baking the pizza in the oven until cheese has melted and ingredients are hot in the center.  Please note: baking times may vary - please watch pizza carefully!</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <button type="button" class="modal-button btn btn-primary fixed-bottom float-right" data-toggle="modal" data-target="#exampleModal">
+                <span><i class="far fa-comment-dots"></i>&nbsp;Live Chat</span>
+            </button>
+              
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5 class="modal-title d-inline-block" id="exampleModalLabel">Customer Support</h5>
+                                    <button type="button" class="close d-inline-block" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <p class="col-12 mb-0">How can we help?</p>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <p class="message received rounded px-3 py-2 float-left">Hello! Thank you for contacting Lou Malnati's. How can we help?</p>
+                            <p class="message sent rounded px-3 py-2 bg-primary float-right">Hey!</p>
+                            <p class="message sent rounded px-3 py-2 bg-primary float-right">I would like to find out more about your rewards program.</p>
+                            <p class="message received rounded px-3 py-2 float-left">Sure! What would you like to know about it?</p>
+                            <p class="message sent rounded px-3 py-2 bg-primary float-right">How does the rewards program work?</p>
+                            <div class="message received rounded px-3 py-3 float-left typing-indicator">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <textarea class="form-control chatbox" id="message" aria-describedby="message" rows="2" placeholder="Type your message..."></textarea>
+                            <button type="button" class="btn btn-primary btn-sm btn-block">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="./assets/js/scripts.js"></script>
+	</body>
+</html>
